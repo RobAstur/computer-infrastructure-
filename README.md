@@ -3,7 +3,7 @@
 #### Repository for computer infrastructure assignment and lessons
 
 
-![Computer Infrastructure](https://evad.ie/solutions/solutions-infrastructure/)
+![Computer Infrastructure](https://www.mbccs.com/wp-content/uploads/2018/08/it_infrastructure-1.jpg)
 
 
 ** by Roberto Gomez Garcia ** Email: G00438875@atu.ie

@@ -3,8 +3,7 @@
 #### Repository for computer infrastructure assignment and lessons
 
 
-![Computer Infrastructure](https://www.computerplusng.com/all-you-need-to-know-about-it-infrastructure/)
-
+![Computer Infrastructure](https://evad.ie/solutions/solutions-infrastructure/)
 
 
 ** by Roberto Gomez Garcia ** Email: G00438875@atu.ie

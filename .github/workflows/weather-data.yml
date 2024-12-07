@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
 steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+steps:
       - name: Clone the repository into data/weather
         run: |
           git clone https://github.com/${{ github.repository }} data/weather

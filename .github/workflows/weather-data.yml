@@ -3,14 +3,18 @@ name: Weather Data Collection
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '0 10 * * *'
+
 jobs:
   collect_weather_data:
     runs-on: ubuntu-latest
 
-    steps:
-      # Checkout the repository to access the script
-      - name: Checkout code
-        uses: actions/checkout@v2
+steps:
+      - name: Clone the repository into data/weather
+        run: |
+          git clone https://github.com/${{ github.repository }} data/weather
+          cd data/weather  # Change into the data/weather directory
 
       # Run the weather script
       - name: Run the weather script

@@ -14,12 +14,6 @@ steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-steps:
-      - name: Clone the repository into data/weather
-        run: |
-          git clone https://github.com/${{ github.repository }} computer-infrastructure-/data/weather
-          cd computer-infrastructure-/data/weather  # Change into the data/weather directory
-
       # Run the weather script
       - name: Run the weather script
         run: ./weather.sh

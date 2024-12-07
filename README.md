@@ -17,6 +17,16 @@ This repository contains my submission for the module computer infrastructure. T
 
 ## Prerequisite 
 
-1.  For local set up anaconda and visual studio
-2.  Familiarity with Jupiter notebook is recommended but not required
+Jupiter notebook and the code can be run in two different ways.
 
+1.  Locally using  anaconda and visual studio. () add links)
+2.  Online setting up a github account to use codespaces.
+3.  Familiarity with Jupiter notebook is recommended but not required
+
+### Running the project locally
+
+1. 
+
+## Contributing
+
+If you would like to contribute to this project, feel free to fork the repository, create a new branch, and submit a pull request. Please ensure that any new code is well-documented and tested.

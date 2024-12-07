@@ -8,8 +8,7 @@ on:
 jobs:
   weather-job:
     runs-on: ubuntu-latest  # Use an Ubuntu virtual machine
-
- steps:
+    steps:
       # Step 1: Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3

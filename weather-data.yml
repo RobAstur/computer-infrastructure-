@@ -1,0 +1,27 @@
+name: Weather Data Collection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  collect_weather_data:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository to access the script
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      # Check if the script exists and its permissions
+      - name: List directory contents
+        run: |
+          ls -l  # List files in the repository to check if weather.sh is there
+          file ./weather.sh  # Check if it's a valid shell script
+
+      # Run the weather script
+      - name: Run the weather script
+        run: ./weather.sh
+
+
+
+

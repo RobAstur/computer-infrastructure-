@@ -11,12 +11,6 @@ jobs:
       # Checkout the repository to access the script
       - name: Checkout code
         uses: actions/checkout@v2
-        
-      # Debug: Check if the script exists and print file details
-      - name: List files and check script
-        run: |
-          ls -l  # List files in the root directory
-          file ./weather.sh  # Check the type of weather.sh script
 
       # Run the weather script
       - name: Run the weather script

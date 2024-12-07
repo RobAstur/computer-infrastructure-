@@ -1,22 +1,29 @@
 name: Weather Data Collection
 
 on:
-  workflow_dispatch:
-
+  workflow_dispatch:  # Allow manual trigger
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '0 10 * * *'  # Run daily at 10 AM UTC
 
 jobs:
   collect_weather_data:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Use Ubuntu virtual machine
 
-steps:
+    steps:
+      # Step 1: Checkout repository
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2  # Checkout the repository
+      
+      # Step 2: Clone the repository into data/weather (if needed)
+      - name: Clone the repository into data/weather
+        run: |
+          git -C computer-infrastructure-/data/weather pull || git clone https://github.com/${{ github.repository }} computer-infrastructure-/data/weather  # Pull if already exists, clone if not
 
-      # Run the weather script
+      # Step 3: Run the weather script
       - name: Run the weather script
-        run: ./weather.sh
+        run: |
+          cd computer-infrastructure-/data/weather  # Change to the cloned directory
+          ./weather.sh  # Run the weather.sh script (already executable)
 
 
 

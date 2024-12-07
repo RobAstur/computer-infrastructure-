@@ -1,13 +1,12 @@
 name: Weather Data Collection
 
-# Trigger the workflow on a schedule (daily at 10 AM UTC) and manually (workflow_dispatch)
 on: workflow_dispatch
 
 jobs:
   collect_weather_data:
     runs-on: ubuntu-latest
     steps:
-          name: output weather
+          - name: output weather
           run: weather.sh
 
 

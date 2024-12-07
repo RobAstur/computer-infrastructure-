@@ -41,4 +41,5 @@ jobs:
           git commit -m "Update weather data"
 
           # Push the changes back to the repository
-          git push origin main  # Adjust 'main' if your default branch is different
+          git push origin main  
+          # Adjust 'main' if your default branch is different

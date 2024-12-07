@@ -14,3 +14,9 @@ This repository contains my submission for the module computer infrastructure. T
 
 1. Clone this repository
 2. Run the code 
+
+## Prerequisite 
+
+1.  For local set up anaconda and visual studio
+2.  Familiarity with Jupiter notebook is recommended but not required
+

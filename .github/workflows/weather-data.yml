@@ -20,7 +20,7 @@ jobs:
       - name: List root directory contents
         run: ls -l
 
-      # Ensure the data/weather folder exists and list its contents to debug
+      # Ensure the data/weather folder exists and list its contents to debug.
       - name: List data/weather directory before downloading
         run: ls -l data/weather
 

@@ -3,6 +3,9 @@ name: Weather Data Collection
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '0 10 * * *'
+
 jobs:
   collect_weather_data:
     runs-on: ubuntu-latest
@@ -10,20 +13,11 @@ jobs:
     permissions:
       contents: write
 
-
     steps:
       # Checkout the repository to access the script.test
 
       - name: Checkout code
         uses: actions/checkout@v2 #step checks out your code, so the workflow can access
-
-      - name: List root directory contents
-        run: ls -l
-
-      # Ensure the data/weather folder exists and list its contents to debug.
-      - name: List data/weather directory before downloading
-        run: ls -l data/weather
-
 
       - name: Run the weather script
         run: ./weather.sh

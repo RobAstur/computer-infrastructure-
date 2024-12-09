@@ -6,6 +6,11 @@ on:
 jobs:
   collect_weather_data:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+
     steps:
       # Checkout the repository to access the script
       - name: Checkout code
@@ -31,10 +36,11 @@ jobs:
           git config user.email "gomezgar.roberto@gmail.com"
           git commit -m "Update weather data"
 
-      # Push the changes to the repository
       - name: Push changes to repository
-        run: git push
-        env:
+        run: |
+          git remote set-url origin https://github.com/RobAstur/computer-infrastructure-  # Ensure using HTTPS
+          git push
+          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 

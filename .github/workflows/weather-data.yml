@@ -12,7 +12,7 @@ jobs:
 
 
     steps:
-      # Checkout the repository to access the script
+      # Checkout the repository to access the script.
       - name: Checkout code
         uses: actions/checkout@v2 #step checks out your code, so the workflow can access
 

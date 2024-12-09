@@ -37,16 +37,10 @@ jobs:
           git config user.email "gomezgar.roberto@gmail.com"
           git commit -m "Update weather data"
 
-      - name: Pull latest changes from remote main
-        run: |
-          git config pull.rebase false  # Configure Git to merge the changes
-          git pull origin main  # Pull remote changes before pushing
-
-
       - name: Push changes to repository
         run: |
-          git remote set-url origin https://github.com/RobAstur/computer-infrastructure-.git  # Ensure using HTTPS
-          git push origin main
+          git remote set-url origin https://github.com/RobAstur/computer-infrastructure-  # Ensure using HTTPS
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

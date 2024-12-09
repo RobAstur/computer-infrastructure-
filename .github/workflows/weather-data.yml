@@ -22,5 +22,20 @@ jobs:
       - name: Run the weather script
         run: ./weather.sh
 
+      - name: Stage changes for commit
+        run: git add -A
+
+      - name: Commit changes
+        run: |
+          git config user.name "RobAstur"
+          git config user.email "gomezgar.roberto@gmail.com"
+          git commit -m "Update weather data"
+
+      # Push the changes to the repository
+      - name: Push changes to repository
+        run: git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
 

@@ -13,7 +13,7 @@
 ## Overview
 The primary goal of this repository is to demonstrate how to effectively use command-line tools and write scripts within a command-line interface environment. Through a series of tasks outlined in the repository, you will learn how to manipulate data and manage code using Linux commands and Bash scripting. The tasks cover various operations, such as:
 
-1)  Creating, removing, and moving files and directories
+1)  Creating, removing, and moving files and directories.
 2)  Inspecting the contents of directories
 3)  Downloading files from the cloud and manipulating them using command-line tools
 

@@ -1,6 +1,6 @@
 # Computer Infrastructure
 
-#### Repository for computer infrastructure assignment and lessons
+#### A repository for learning computer infrastructure and Bash scripting
 
 
 ![Computer Infrastructure](https://www.mbccs.com/wp-content/uploads/2018/08/it_infrastructure-1.jpg)
@@ -8,12 +8,22 @@
 
 ** by Roberto Gomez Garcia ** Email: G00438875@atu.ie
 
-This repository contains my submission for the module computer infrastructure. This module is part of the high diploma in science in computing in data analytics. 
+
+
+## Overview
+The primary goal of this repository is to demonstrate how to effectively use command-line tools and write scripts within a command-line interface environment. Through a series of tasks outlined in the repository, you will learn how to manipulate data and manage code using Linux commands and Bash scripting. The tasks cover various operations, such as:
+
+1)  Creating, removing, and moving files and directories
+2)  Inspecting the contents of directories
+3)  Downloading files from the cloud and manipulating them using command-line tools
+
 
 ## Getting started
 
-1. Clone this repository
-2. Run the code 
+1)  Clone the repository:
+Clone the repository to your local machine using the following command:
+git clone <repository-url>
+2)  Run the code: After cloning the repository, navigate to the project directory and run the code as instructed in the task files. This repository uses command-line scripts, so ensure you're comfortable using the terminal to execute them.
 
 ## Prerequisite 
 
@@ -25,8 +35,15 @@ Jupiter notebook and the code can be run in two different ways.
 
 ### Running the project locally
 
-1. 
+
+## Getting Help
+If you encounter any issues or need assistance with the project, please use the Issues section of the repository. To create a new issue, follow these steps:
+
+Go to the Issues section.
+Click on New issue and provide a detailed description of the problem.
+For more information on creating and managing issues, see the GitHub Issues documentation.[github_issues](https://docs.github.com/en/issues)
 
 ## Contributing
 
-If you would like to contribute to this project, feel free to fork the repository, create a new branch, and submit a pull request. Please ensure that any new code is well-documented and tested.
+
+

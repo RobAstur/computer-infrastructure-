@@ -56,5 +56,5 @@ For more information on creating and managing issues, see the GitHub Issues docu
 
 If you'd like to contribute, please fork the repository, make your changes, and submit a pull request. Please include a detail description. if any issue is encouter please feel free to open an issue.
 
---------------------------
+---------------------------
 END

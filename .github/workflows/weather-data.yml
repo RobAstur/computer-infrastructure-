@@ -2,7 +2,7 @@ name: Weather Data Collection
 
 on:
   workflow_dispatch:
-
+    # adding cron to ensure it is run at 10:00 each day
   schedule:
     - cron: '0 10 * * *'
 
@@ -10,11 +10,11 @@ jobs:
   collect_weather_data:
     runs-on: ubuntu-latest
 
+    # we need to allow script to make changes in the repository
     permissions:
       contents: write
 
     steps:
-      # Checkout the repository to access the script.test
 
       - name: Checkout code
         uses: actions/checkout@v2 #step checks out your code, so the workflow can access
@@ -30,10 +30,6 @@ jobs:
           git config user.name "RobAstur"
           git config user.email "gomezgar.roberto@gmail.com"
           git commit -m "Update weather data"
-
-      - name: Pull latest changes
-        run: |
-          git pull origin main  
 
       - name: Push changes to repository
         run: |

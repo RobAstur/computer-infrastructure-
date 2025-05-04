@@ -27,8 +27,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config user.name "RobAstur"
-          git config user.email "gomezgar.roberto@gmail.com"
+          git config user.name ""
+          git config user.email ""
           git commit -m "Update weather data"
 
       - name: Push changes to repository
